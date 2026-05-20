@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>หลังบ้าน | Prime Store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+Thai:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="admin.css" />
+  </head>
+  <body>
+    <main class="admin-shell">
+      <section class="login-card" id="loginView">
+        <div class="admin-brand">
+          <span>PS</span>
+          <div>
+            <b>Prime Store Admin</b>
+            <small>เข้าสู่ระบบหลังบ้าน</small>
+          </div>
+        </div>
+
+        <form id="loginForm" class="admin-form">
+          <label>
+            Username
+            <input type="text" name="username" autocomplete="username" placeholder="admin" required />
+          </label>
+          <label>
+            Password
+            <input type="password" name="password" autocomplete="current-password" placeholder="123456" required />
+          </label>
+          <button type="submit">เข้าสู่ระบบ</button>
+          <p class="form-note">รหัสเริ่มต้น: admin / 123456</p>
+          <p class="error-message" id="loginError"></p>
+        </form>
+      </section>
+
+      <section class="dashboard" id="dashboardView" hidden>
+        <aside class="admin-sidebar">
+          <div class="admin-brand">
+            <span>PS</span>
+            <div>
+              <b>หลังบ้านร้านค้า</b>
+              <small>จัดการสินค้าและข้อมูลร้าน</small>
+            </div>
+          </div>
+          <nav>
+            <a class="active" href="#productsPanel">สินค้า</a>
+            <a href="#templatePanel">ตกแต่งเทมเพลต</a>
+            <a href="#settingsPanel">ตั้งค่าร้าน</a>
+            <a href="index.html">ดูหน้าเว็บ</a>
+          </nav>
+          <button class="logout-btn" id="logoutButton" type="button">ออกจากระบบ</button>
+        </aside>
+
+        <section class="admin-content">
+          <header class="admin-topbar">
+            <div>
+              <p>Admin Panel</p>
+              <h1>จัดการเว็บไซต์ออนไลน์</h1>
+            </div>
+            <button id="newProductButton" type="button">เพิ่มสินค้าใหม่</button>
+          </header>
+
+          <section class="panel" id="templatePanel">
+            <div class="panel-head">
+              <div>
+                <h2>ตกแต่งเทมเพลต</h2>
+                <p>แก้ข้อความ สี รูป Hero เปิด/ปิดส่วนต่าง ๆ และใส่ CSS เพิ่มเองได้</p>
+              </div>
+              <button class="light-btn" id="resetTemplateButton" type="button">คืนค่าหน้าตาเริ่มต้น</button>
+            </div>
+            <form class="template-form" id="templateForm">
+              <label>
+                ตัวอักษรโลโก้
+                <input type="text" name="logoText" maxlength="4" />
+              </label>
+              <label>
+                ข้อความเล็กบน Hero
+                <input type="text" name="heroEyebrow" />
+              </label>
+              <label class="wide">
+                หัวข้อใหญ่ Hero
+                <input type="text" name="heroTitle" />
+              </label>
+              <label class="wide">
+                รายละเอียด Hero
+                <textarea name="heroText" rows="3"></textarea>
+              </label>
+              <label>
+                ข้อความปุ่มหลัก
+                <input type="text" name="primaryButtonText" />
+              </label>
+              <label>
+                ข้อความปุ่มรอง
+                <input type="text" name="secondaryButtonText" />
+              </label>
+              <label>
+                ข้อความเล็กบนการ์ด Hero
+                <input type="text" name="heroCardSmall" />
+              </label>
+              <label>
+                ชื่อสินค้าบนการ์ด Hero
+                <input type="text" name="heroCardTitle" />
+              </label>
+              <label>
+                ราคาบนการ์ด Hero
+                <input type="text" name="heroCardPrice" />
+              </label>
+              <label class="wide">
+                รูป Hero
+                <input type="text" name="heroImage" placeholder="images/hero.jpg หรือ data:image..." />
+              </label>
+              <label>
+                อัปโหลดรูป Hero จากเครื่อง
+                <input type="file" name="heroImageFile" accept="image/*" />
+              </label>
+              <div class="image-preview">
+                <img id="heroImagePreview" alt="ตัวอย่างรูป Hero" />
+                <div>
+                  <b>ตัวอย่างรูป Hero</b>
+                  <p>เลือกรูปจากเครื่อง หรือใส่ path รูปจากโฟลเดอร์ images ได้</p>
+                </div>
+              </div>
+
+              <div class="color-grid wide">
+                <label>
+                  สีหลัก
+                  <input type="color" name="primaryColor" />
+                </label>
+                <label>
+                  สีพรีเมียม
+                  <input type="color" name="accentColor" />
+                </label>
+                <label>
+                  สีพื้นหลัง
+                  <input type="color" name="backgroundColor" />
+                </label>
+                <label>
+                  สีพื้นส่วนรอง
+                  <input type="color" name="softColor" />
+                </label>
+              </div>
+
+              <label>
+                หัวข้อสินค้า
+                <input type="text" name="productTitle" />
+              </label>
+              <label>
+                หัวข้อโปรโมชั่น
+                <input type="text" name="promoTitle" />
+              </label>
+              <label>
+                หัวข้อจุดเด่นร้าน
+                <input type="text" name="whyTitle" />
+              </label>
+              <label>
+                หัวข้อวิธีสั่งซื้อ
+                <input type="text" name="orderTitle" />
+              </label>
+              <label>
+                หัวข้อรีวิว
+                <input type="text" name="reviewTitle" />
+              </label>
+              <label>
+                หัวข้อติดต่อ
+                <input type="text" name="contactTitle" />
+              </label>
+
+              <label class="wide">
+                จุดเด่นใต้ Hero
+                <textarea name="trustItems" rows="3" placeholder="บรรทัดละ 1 รายการ"></textarea>
+              </label>
+              <label class="wide">
+                แถบสถิติ
+                <textarea name="stats" rows="4" placeholder="ตัวเลข|คำอธิบาย"></textarea>
+              </label>
+              <label class="wide">
+                การ์ดโปรโมชั่น
+                <textarea name="promoCards" rows="5" placeholder="ป้ายเล็ก|หัวข้อ|รายละเอียด"></textarea>
+              </label>
+              <label class="wide">
+                จุดเด่นร้าน
+                <textarea name="features" rows="5" placeholder="หัวข้อ|รายละเอียด"></textarea>
+              </label>
+              <label class="wide">
+                ขั้นตอนสั่งซื้อ
+                <textarea name="steps" rows="5" placeholder="หัวข้อ|รายละเอียด"></textarea>
+              </label>
+              <label class="wide">
+                รีวิวลูกค้า
+                <textarea name="reviews" rows="5" placeholder="ชื่อลูกค้า|ข้อความรีวิว|★★★★★"></textarea>
+              </label>
+              <label class="wide">
+                ข้อความนำในส่วนติดต่อ
+                <input type="text" name="contactLead" />
+              </label>
+              <label class="wide">
+                ข้อมูลติดต่อ
+                <textarea name="contactInfo" rows="4" placeholder="Line: @yourshop"></textarea>
+              </label>
+              <label>
+                หัวข้อแผนที่
+                <input type="text" name="mapTitle" />
+              </label>
+              <label>
+                ข้อความแผนที่
+                <input type="text" name="mapText" />
+              </label>
+              <label class="wide">
+                ข้อความ Footer
+                <input type="text" name="footerText" />
+              </label>
+              <label class="wide">
+                ข้อความลิขสิทธิ์ / นโยบาย
+                <input type="text" name="copyrightText" />
+              </label>
+
+              <div class="toggle-grid wide">
+                <label><input type="checkbox" name="showPromotions" /> แสดงโปรโมชั่น</label>
+                <label><input type="checkbox" name="showWhyUs" /> แสดงจุดเด่นร้าน</label>
+                <label><input type="checkbox" name="showReviews" /> แสดงรีวิว</label>
+              </div>
+
+              <label class="wide">
+                CSS เพิ่มเติม
+                <textarea name="customCss" rows="7" placeholder=".hero { border-radius: 24px; }"></textarea>
+              </label>
+              <div class="form-actions wide">
+                <button type="submit">บันทึกเทมเพลต</button>
+                <a class="preview-btn" href="index.html" target="_blank" rel="noopener">ดูหน้าเว็บ</a>
+              </div>
+            </form>
+          </section>
+
+          <section class="panel" id="settingsPanel">
+            <div class="panel-head">
+              <div>
+                <h2>ตั้งค่าร้าน</h2>
+                <p>แก้ชื่อร้านและลิงก์ Line สำหรับปุ่มสั่งซื้อ</p>
+              </div>
+            </div>
+            <form class="settings-grid" id="settingsForm">
+              <label>
+                ชื่อร้าน
+                <input type="text" name="storeName" required />
+              </label>
+              <label>
+                ลิงก์ Line / Messenger
+                <input type="url" name="lineUrl" required />
+              </label>
+              <button type="submit">บันทึกตั้งค่า</button>
+            </form>
+          </section>
+
+          <section class="panel product-editor" id="productsPanel">
+            <div class="panel-head">
+              <div>
+                <h2>สินค้า</h2>
+                <p>เพิ่ม แก้ไข หรือลบสินค้า หน้าเว็บหลักจะอัปเดตตามข้อมูลนี้</p>
+              </div>
+              <button class="light-btn" id="resetProductsButton" type="button">คืนค่าสินค้าตัวอย่าง</button>
+            </div>
+
+            <form id="productForm" class="product-form">
+              <input type="hidden" name="id" />
+              <label>
+                ชื่อสินค้า
+                <input type="text" name="name" required />
+              </label>
+              <label>
+                ราคา
+                <input type="text" name="price" placeholder="฿990" required />
+              </label>
+              <label>
+                หมวดหมู่
+                <select name="category" required>
+                  <option value="home">ของใช้ในบ้าน</option>
+                  <option value="style">แฟชั่น</option>
+                  <option value="gift">ของขวัญ</option>
+                </select>
+              </label>
+              <input type="hidden" name="image" />
+              <label class="wide">
+                อัปโหลดรูปจากเครื่อง
+                <input type="file" name="imageFile" accept="image/*" />
+              </label>
+              <details class="wide image-path-box">
+                <summary>ใช้รูปจากโฟลเดอร์ images แทน</summary>
+                <label>
+                  path รูปสินค้า
+                  <input type="text" name="imagePath" placeholder="images/product-1.jpg" />
+                </label>
+              </details>
+              <div class="image-preview wide">
+                <img id="imagePreview" alt="ตัวอย่างรูปสินค้า" />
+                <div>
+                  <b>ตัวอย่างรูปสินค้า</b>
+                  <p>กดเลือกไฟล์รูปจากเครื่อง แล้วกดบันทึกสินค้าได้เลย ไม่ต้องกรอก URL</p>
+                </div>
+              </div>
+              <label class="wide">
+                รายละเอียดสั้น
+                <input type="text" name="short" required />
+              </label>
+              <label class="wide">
+                รายละเอียดสินค้า
+                <textarea name="detail" rows="4" required></textarea>
+              </label>
+              <div class="form-actions wide">
+                <button type="submit">บันทึกสินค้า</button>
+                <button class="light-btn" id="cancelEditButton" type="button">ล้างฟอร์ม</button>
+              </div>
+            </form>
+
+            <div class="product-list" id="adminProductList"></div>
+          </section>
+        </section>
+      </section>
+    </main>
+
+    <script src="store.js"></script>
+    <script src="admin.js"></script>
+  </body>
+</html>
