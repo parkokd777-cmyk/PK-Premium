@@ -474,3 +474,139 @@ button {
     justify-content: flex-start;
   }
 }
+/* ===== PK Premium Admin Upgrade ===== */
+
+body {
+  background: linear-gradient(135deg, #f7f1e7, #ead8b6) !important;
+  color: #171717 !important;
+}
+
+/* กล่องใหญ่ทั้งหมด */
+.panel,
+.login-card,
+.admin-topbar {
+  background: rgba(255, 255, 255, 0.92) !important;
+  border: 1px solid rgba(185, 154, 95, 0.28) !important;
+  border-radius: 26px !important;
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.10) !important;
+}
+
+/* แถบเมนูซ้าย */
+.admin-sidebar {
+  background: linear-gradient(180deg, #111111, #1c1c1c) !important;
+  border-right: 1px solid rgba(185, 154, 95, 0.35) !important;
+}
+
+/* โลโก้หลังบ้าน */
+.admin-brand span {
+  border-radius: 16px !important;
+  background: linear-gradient(135deg, #111111, #2a2a2a) !important;
+  border: 1px solid #b99a5f !important;
+  box-shadow: 0 10px 24px rgba(0,0,0,0.22) !important;
+}
+
+/* เมนูด้านซ้าย */
+.admin-sidebar nav a {
+  border-radius: 14px !important;
+  font-weight: 800 !important;
+}
+
+.admin-sidebar nav a.active,
+.admin-sidebar nav a:hover {
+  background: rgba(185, 154, 95, 0.22) !important;
+  color: #ffffff !important;
+}
+
+/* หัวข้อบนสุด */
+.admin-topbar {
+  padding: 24px !important;
+}
+
+.admin-topbar p {
+  color: #b99a5f !important;
+  font-weight: 900 !important;
+  letter-spacing: 0.08em !important;
+}
+
+.admin-topbar h1 {
+  font-size: clamp(32px, 4vw, 48px) !important;
+  font-weight: 900 !important;
+}
+
+/* ฟอร์ม */
+.product-form,
+.template-form {
+  background: linear-gradient(180deg, #ffffff, #fbf7ef) !important;
+  border: 1px solid #e8dfcf !important;
+  border-radius: 22px !important;
+  padding: 20px !important;
+}
+
+/* ช่องกรอก */
+input,
+select,
+textarea {
+  border-radius: 14px !important;
+  border: 1px solid #ded6c9 !important;
+  background: #ffffff !important;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #b99a5f !important;
+  box-shadow: 0 0 0 4px rgba(185,154,95,0.16) !important;
+}
+
+/* ปุ่มหลัก */
+button {
+  border-radius: 14px !important;
+  background: linear-gradient(135deg, #111111, #2a2a2a) !important;
+  font-weight: 900 !important;
+  box-shadow: 0 10px 24px rgba(0,0,0,0.18) !important;
+}
+
+button:hover {
+  transform: translateY(-1px) !important;
+}
+
+/* ปุ่มรอง */
+.light-btn,
+.preview-btn {
+  background: #f1eadf !important;
+  color: #171717 !important;
+  border: 1px solid #e1d6c5 !important;
+  border-radius: 14px !important;
+  font-weight: 900 !important;
+}
+
+/* รายการสินค้า */
+.product-row {
+  background: #ffffff !important;
+  border: 1px solid #e8dfcf !important;
+  border-radius: 20px !important;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.06) !important;
+}
+
+.product-row img {
+  border-radius: 16px !important;
+}
+
+/* กล่องรูปตัวอย่าง */
+.image-preview {
+  border-radius: 20px !important;
+  border: 1px dashed #b99a5f !important;
+  background: #ffffff !important;
+}
+
+/* มือถือ */
+@media (max-width: 920px) {
+  .admin-sidebar {
+    height: auto !important;
+    position: static !important;
+  }
+
+  .dashboard {
+    grid-template-columns: 1fr !important;
+  }
+}
