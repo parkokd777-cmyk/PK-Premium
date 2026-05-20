@@ -839,18 +839,13 @@ h3 {
     width: 100%;
   }
 }
-/* ===== ซ่อนปุ่มแชททันทีขวาบน ===== */
+/* ===== ซ่อนเฉพาะปุ่ม LINE บนเมนู Header ===== */
 
-.site-header a[href*="line.me"],
-.site-header a[href*="lin.ee"],
-header a[href*="line.me"],
-header a[href*="lin.ee"],
-.main-nav a[href*="line.me"],
-.main-nav a[href*="lin.ee"],
-nav a[href*="line.me"],
-nav a[href*="lin.ee"] {
+.site-header .main-nav a[href*="line.me"],
+.site-header .main-nav a[href*="lin.ee"],
+.site-header nav a[href*="line.me"],
+.site-header nav a[href*="lin.ee"],
+header .main-nav a[href*="line.me"],
+header .main-nav a[href*="lin.ee"] {
   display: none !important;
-  opacity: 0 !important;
-  visibility: hidden !important;
-  pointer-events: none !important;
 }
