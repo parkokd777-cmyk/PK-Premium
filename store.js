@@ -225,7 +225,7 @@ const SETTINGS_KEY = "pkPremiumSettingsV2";
 
 function readJson(key, fallback) {
   try {
-    const value = localStorage.getItem(key);
+    const value = Firebase Firestore.getItem(key);
     return value ? JSON.parse(value) : fallback;
   } catch {
     return fallback;
@@ -233,7 +233,7 @@ function readJson(key, fallback) {
 }
 
 function writeJson(key, value) {
-  localStorage.setItem(key, JSON.stringify(value));
+  Firebase Firestore.setItem(key, JSON.stringify(value));
 }
 
 window.Store = {
@@ -254,10 +254,10 @@ window.Store = {
   },
 
   resetProducts() {
-    localStorage.removeItem(PRODUCT_KEY);
+    Firebase Firestore.removeItem(PRODUCT_KEY);
   },
 
   resetSettings() {
-    localStorage.removeItem(SETTINGS_KEY);
+    Firebase Firestore.removeItem(SETTINGS_KEY);
   },
 };
