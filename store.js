@@ -1,109 +1,227 @@
 const defaultProducts = [
   {
-    id: "premium-bag",
-    name: "กระเป๋า Everyday Tote",
+    id: "pk-classic-white-shoes",
+    name: "รองเท้า PK Classic White",
     category: "style",
     categoryLabel: "แฟชั่น",
-    price: "฿1,290",
-    short: "กระเป๋าทรงเรียบ ใช้งานง่าย เหมาะกับทำงานและวันสบาย ๆ",
-    detail: "วัสดุแข็งแรง น้ำหนักเบา ช่องเก็บของเป็นสัดส่วน เหมาะสำหรับลูกค้าที่ต้องการสินค้าดูพรีเมียมแต่ใช้งานได้ทุกวัน",
-    image: "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?auto=format&fit=crop&w=900&q=80",
+    price: "990",
+    short: "รองเท้าโทนขาว ใส่ง่าย สภาพดี พร้อมใช้งาน",
+    detail:
+      "รองเท้า PK Classic White สไตล์เรียบหรู เหมาะกับใส่เที่ยว ใส่ทำงาน หรือแมตช์กับลุคประจำวัน สินค้าคัดสภาพก่อนลงขายทุกครั้ง ลูกค้าสามารถทักสอบถามรูปเพิ่มเติมก่อนสั่งซื้อได้",
+    image: "images/product-shoes.png",
   },
   {
-    id: "ceramic-cup",
-    name: "แก้วเซรามิก Minimal",
-    category: "home",
-    categoryLabel: "ของใช้ในบ้าน",
-    price: "฿390",
-    short: "แก้วดีไซน์สะอาด จับถนัดมือ ใช้ได้ทั้งร้อนและเย็น",
-    detail: "แก้วเซรามิกโทนอบอุ่น เหมาะสำหรับบ้าน คาเฟ่ หรือเป็นของขวัญ มีผิวสัมผัสเรียบและล้างทำความสะอาดง่าย",
-    image: "https://images.unsplash.com/photo-1517256064527-09c73fc73e38?auto=format&fit=crop&w=900&q=80",
-  },
-  {
-    id: "scented-candle",
-    name: "เทียนหอม Signature",
-    category: "gift",
-    categoryLabel: "ของขวัญ",
-    price: "฿590",
-    short: "กลิ่นหอมละมุน แพ็กเกจเรียบหรู เหมาะสำหรับมอบเป็นของขวัญ",
-    detail: "เทียนหอมสำหรับสร้างบรรยากาศผ่อนคลาย จุดเด่นคือกลิ่นไม่ฉุน ภาชนะเรียบสวย สามารถวางตกแต่งบ้านได้",
-    image: "https://images.unsplash.com/photo-1603006905003-be475563bc59?auto=format&fit=crop&w=900&q=80",
-  },
-  {
-    id: "desk-organizer",
-    name: "ชุดจัดโต๊ะทำงาน",
-    category: "home",
-    categoryLabel: "ของใช้ในบ้าน",
-    price: "฿890",
-    short: "ช่วยให้โต๊ะทำงานเป็นระเบียบ ดูสะอาด และหยิบใช้ง่าย",
-    detail: "เหมาะสำหรับคนทำงานที่ต้องการพื้นที่เรียบร้อย มีช่องเก็บอุปกรณ์พื้นฐาน วางบนโต๊ะแล้วดูทันสมัย",
-    image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=80",
-  },
-  {
-    id: "gift-box",
-    name: "กล่องของขวัญ Premium Set",
-    category: "gift",
-    categoryLabel: "ของขวัญ",
-    price: "฿1,590",
-    short: "เซ็ตของขวัญพร้อมแพ็ก สวยจบในกล่องเดียว",
-    detail: "เหมาะกับเทศกาล วันเกิด หรือของขวัญองค์กร สามารถเปลี่ยนรายการสินค้าในกล่องตามงบประมาณได้",
-    image: "https://images.unsplash.com/photo-1512909006721-3d6018887383?auto=format&fit=crop&w=900&q=80",
-  },
-  {
-    id: "watch",
-    name: "นาฬิกา Classic Watch",
+    id: "pk-luxury-cap",
+    name: "หมวก PK Luxury Cap",
     category: "style",
     categoryLabel: "แฟชั่น",
-    price: "฿2,490",
-    short: "นาฬิกาทรงคลาสสิก ใส่ง่าย เข้ากับหลายสไตล์",
-    detail: "ดีไซน์เรียบหรู เหมาะกับการใส่ทำงานหรือโอกาสพิเศษ หน้าปัดอ่านง่ายและสายปรับขนาดได้",
-    image: "https://images.unsplash.com/photo-1524592094714-0f0654e20314?auto=format&fit=crop&w=900&q=80",
+    price: "350",
+    short: "หมวกสีดำทรงสวย ใส่ง่าย แมตช์ได้หลายลุค",
+    detail:
+      "หมวก PK Luxury Cap สีดำเรียบหรู เหมาะกับสายแฟชั่นที่ชอบลุคมินิมอล ใส่ง่ายทั้งผู้ชายและผู้หญิง สินค้าพร้อมส่ง ตรวจสภาพก่อนจัดส่ง",
+    image: "images/product-cap.png",
+  },
+  {
+    id: "pk-denim-black",
+    name: "กางเกง PK Denim Black",
+    category: "style",
+    categoryLabel: "แฟชั่น",
+    price: "790",
+    short: "กางเกงยีนส์สีดำ ทรงสวย ใช้งานได้หลายโอกาส",
+    detail:
+      "กางเกง PK Denim Black โทนดำคลาสสิก ใส่ง่าย เข้ากับเสื้อได้หลายแบบ เหมาะสำหรับลูกค้าที่ต้องการของดีน่าใช้ ราคาเป็นกันเอง พร้อมดูสภาพก่อนจัดส่ง",
+    image: "images/product-pants.png",
+  },
+  {
+    id: "pk-leather-belt",
+    name: "เข็มขัด PK Leather Belt",
+    category: "style",
+    categoryLabel: "แฟชั่น",
+    price: "450",
+    short: "เข็มขัดสีดำเรียบหรู ใช้งานง่าย ดูสุภาพ",
+    detail:
+      "เข็มขัด PK Leather Belt ดีไซน์เรียบ สีดำสุภาพ เหมาะกับใส่ทำงาน ใส่เที่ยว หรือใช้เป็นไอเทมเสริมลุค สินค้าคัดสภาพก่อนลงขายและแพ็กเรียบร้อยก่อนจัดส่ง",
+    image: "images/product-belt.png",
+  },
+  {
+    id: "pk-minimal-black-shirt",
+    name: "เสื้อ PK Minimal Black",
+    category: "style",
+    categoryLabel: "แฟชั่น",
+    price: "390",
+    short: "เสื้อสีดำมินิมอล ใส่ง่าย สไตล์เรียบหรู",
+    detail:
+      "เสื้อ PK Minimal Black โทนดำเรียบง่าย เหมาะกับลูกค้าที่ชอบสไตล์มินิมอล ใส่ได้ทุกวัน แมตช์กับกางเกงได้หลายแบบ สินค้าตรวจสภาพก่อนจัดส่ง",
+    image: "images/product-shirt.png",
+  },
+  {
+    id: "pk-premium-watch",
+    name: "นาฬิกา PK Premium Watch",
+    category: "style",
+    categoryLabel: "แฟชั่น",
+    price: "1,290",
+    short: "นาฬิกาทรงคลาสสิก หน้าปัดเรียบ ดูพรีเมี่ยม",
+    detail:
+      "นาฬิกา PK Premium Watch ดีไซน์เรียบหรู เหมาะกับใส่ทำงานหรือออกงานทั่วไป หน้าปัดอ่านง่าย โทนสีสุภาพ ดูดีเกินราคา สอบถามรายละเอียดเพิ่มเติมได้ก่อนสั่งซื้อ",
+    image: "images/product-watch.png",
+  },
+  {
+    id: "pk-vr-vision",
+    name: "แว่น VR PK Vision",
+    category: "gift",
+    categoryLabel: "ของขวัญ",
+    price: "1,590",
+    short: "แว่น VR ดีไซน์ทันสมัย เหมาะสำหรับของขวัญ",
+    detail:
+      "แว่น VR PK Vision เหมาะสำหรับลูกค้าที่มองหาสินค้าแนวเทคโนโลยีหรือของขวัญชิ้นพิเศษ ดีไซน์ดูทันสมัย สอบถามสภาพสินค้าและรายละเอียดเพิ่มเติมได้ก่อนสั่งซื้อ",
+    image: "images/product-vr.png",
   },
 ];
 
 const defaultSettings = {
-  storeName: "Prime Store",
-  logoText: "PS",
-  lineUrl: "https://line.me/R/ti/p/@yourshop",
-  heroEyebrow: "ร้านค้าออนไลน์พร้อมใช้งาน",
-  heroTitle: "สินค้าคุณภาพ พร้อมบริการที่เชื่อถือได้",
-  heroText: "เลือกซื้อสินค้าง่าย สะดวก รวดเร็ว พร้อมทีมงานดูแลตั้งแต่ก่อนสั่งซื้อจนถึงหลังการขาย",
+  storeName: "PK Premium",
+  logoText: "PK",
+  lineUrl: "https://line.me/R/ti/p/@okdpk",
+
+  heroEyebrow: "PK PREMIUM STORE",
+  heroTitle: "สินค้ามือ 1 และมือ 2 คุณภาพดี",
+  heroText:
+    "สินค้าแฟชั่นคัดสภาพก่อนลงขาย สั่งซื้อง่าย ตอบไว พร้อมดูแลลูกค้าตั้งแต่เลือกสินค้าไปจนถึงหลังการขาย",
   primaryButtonText: "ดูสินค้าทั้งหมด",
-  secondaryButtonText: "ติดต่อสั่งซื้อ",
-  heroImage: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=980&q=80",
+  secondaryButtonText: "แชททันที",
+  heroImage: "images/hero-pk.png",
+
   primaryColor: "#111111",
   accentColor: "#b99a5f",
   backgroundColor: "#ffffff",
-  softColor: "#f6f6f4",
+  softColor: "#f6f1e8",
+
   productTitle: "สินค้าขายดี",
-  promoTitle: "โปรโมชั่นพิเศษ",
-  whyTitle: "ทำไมต้องเลือกเรา",
+  promoTitle: "โปรโมชั่น",
+  whyTitle: "ทำไมต้องเลือก PK",
   orderTitle: "วิธีสั่งซื้อ",
-  reviewTitle: "รีวิวจากลูกค้า",
-  contactTitle: "ติดต่อเรา",
-  trustItems: "จัดส่งรวดเร็ว\nรับประกันสินค้า\nชำระเงินปลอดภัย",
-  stats: "1,200+|ออเดอร์สำเร็จ\n4.9/5|คะแนนรีวิวลูกค้า\n24 ชม.|เตรียมจัดส่งเร็ว\n100%|ตรวจสินค้าก่อนส่ง",
-  heroCardSmall: "สินค้าขายดีประจำสัปดาห์",
-  heroCardTitle: "Premium Essentials Set",
-  heroCardPrice: "เริ่มต้น ฿890",
-  promoCards: "โปรประจำเดือน|ซื้อครบ ฿1,500 ส่งฟรีทั่วประเทศ|เหมาะสำหรับลูกค้าที่ต้องการสั่งหลายรายการในครั้งเดียว\nสินค้าแนะนำ|ลด 10% สำหรับสินค้าหมวดของขวัญ|ใช้ได้กับสินค้าที่ร่วมรายการถึงสิ้นเดือนนี้\nลูกค้าใหม่|รับคูปองส่วนลด ฿100 เมื่อสั่งครั้งแรก|ทักแชทเพื่อรับโค้ดก่อนชำระเงิน",
-  features: "สินค้าคุณภาพ|คัดสินค้าและตรวจสภาพก่อนจัดส่งทุกครั้ง\nตอบแชทไว|ทีมงานพร้อมช่วยแนะนำสินค้าและเช็คสต็อก\nแพ็กของดี|บรรจุภัณฑ์เรียบร้อย ลดความเสียหายระหว่างขนส่ง\nบริการหลังการขาย|ดูแลปัญหาหลังรับสินค้าอย่างเป็นระบบ\nสั่งซื้อง่าย|เลือกสินค้า กดแชท และชำระเงินได้ในไม่กี่ขั้นตอน",
-  steps: "เลือกสินค้า|ดูรายละเอียด ราคา และรูปสินค้าที่ต้องการ\nแชทสอบถามหรือกดสั่งซื้อ|ส่งชื่อสินค้าให้ทีมงานเช็คสต็อกและยอดรวม\nชำระเงิน|โอนเงินหรือชำระตามช่องทางที่ร้านกำหนด\nรอรับสินค้า|ร้านจัดส่งพร้อมแจ้งเลขพัสดุให้ติดตามได้",
-  reviews: "คุณมินตรา|สินค้าตรงปก แพ็กดีมาก ส่งไว ตอบแชทสุภาพและให้คำแนะนำละเอียด|★★★★★\nคุณธันวา|สั่งครั้งแรกประทับใจมาก ขั้นตอนง่าย ได้รับเลขพัสดุเร็ว|★★★★★\nคุณแพรว|ของขวัญดูพรีเมียมกว่าที่คิด ร้านช่วยแนะนำสินค้าได้เหมาะมาก|★★★★★",
-  contactLead: "แก้ไขช่องทางติดต่อเหล่านี้เป็นข้อมูลร้านจริงได้ทันที",
-  contactInfo: "Line: @yourshop\nFacebook: Prime Store Official\nโทร: 08x-xxx-xxxx\nเวลาให้บริการ: ทุกวัน 09:00 - 20:00 น.",
-  mapTitle: "แผนที่ร้าน",
-  mapText: "สามารถฝัง Google Maps จริงได้ที่ส่วนนี้ หากร้านมีหน้าร้าน",
-  footerText: "ร้านค้าออนไลน์โครงสร้างเรียบง่าย ดูสะอาด ใช้งานง่าย และแก้ไขต่อได้สะดวก",
-  copyrightText: "© 2026 Prime Store. All rights reserved. นโยบายร้าน / เงื่อนไขการสั่งซื้อ",
+  reviewTitle: "รีวิวลูกค้า",
+  contactTitle: "ติดต่อร้าน",
+
+  trustItems:
+    "จัดส่งรวดเร็ว\nรับประกันสินค้า\nชำระเงินปลอดภัย",
+
+  stats:
+    "พร้อมส่ง|สอบถามก่อนสั่งซื้อได้\nคัดสภาพ|ตรวจสินค้าก่อนลงขาย\nแพ็กดี|จัดส่งเรียบร้อย\nดูแลหลังขาย|รับประกันหลังได้รับสินค้า",
+
+  heroCardSmall: "สินค้าแฟชั่นมือ 1 / มือ 2 คัดสภาพก่อนลงขาย",
+  heroCardTitle: "ของดีน่าใช้ เลือกง่าย",
+  heroCardPrice: "ราคาเป็นกันเอง พร้อมดูแลก่อนจัดส่ง",
+
+  promoCards:
+    "โปรวันเกิด|วันเกิดลด 10%|สำหรับสินค้าที่ร่วมรายการ สอบถามร้านก่อนสั่งซื้อ\nสินค้าแนะนำ|ของดีประจำร้าน|คัดสินค้าน่าใช้ ราคาเหมาะสม และพร้อมส่ง\nรับประกันสินค้า|ดูแลหลังได้รับสินค้า 3 วัน|แจ้งปัญหาพร้อมหลักฐานตามเงื่อนไขร้าน",
+
+  features:
+    "สินค้าคุณภาพ|คัดสภาพและตรวจสินค้าก่อนลงขายทุกครั้ง\nตอบแชทไว|สอบถามรายละเอียด รูปเพิ่มเติม และสถานะสินค้าได้\nแพ็กของดี|แพ็กสินค้าเรียบร้อยก่อนจัดส่ง ลดความเสียหายระหว่างขนส่ง\nบริการหลังการขาย|ดูแลปัญหาหลังได้รับสินค้าอย่างเป็นระบบ\nสั่งซื้อง่าย|เลือกสินค้า ทักแชท ยืนยันยอด และรอรับสินค้าได้เลย",
+
+  steps:
+    "เลือกสินค้า|ดูสินค้า ราคา และรายละเอียดที่ต้องการ\nทักแชทสอบถาม|แจ้งชื่อสินค้าเพื่อเช็กสภาพและสต็อก\nยืนยันยอดชำระ|ร้านสรุปยอดและช่องทางชำระเงินให้ชัดเจน\nรอรับสินค้า|ร้านแพ็กของและแจ้งรายละเอียดการจัดส่ง",
+
+  reviews:
+    "คุณลูกค้า PK|สินค้าตรงปก แพ็กดี ตอบไว สั่งง่ายมาก|★★★★★\nคุณลูกค้าแฟชั่น|ของสภาพดี ราคาโอเค ร้านให้ดูรูปก่อนตัดสินใจ|★★★★★\nคุณลูกค้าประจำ|ประทับใจบริการหลังการขาย สอบถามแล้วตอบชัดเจน|★★★★★",
+
+  contactLead:
+    "สอบถามสินค้า ขอรูปเพิ่มเติม เช็กสภาพ หรือสั่งซื้อได้ทาง LINE ร้าน",
+  contactInfo:
+    "Line: @okdpk\nFacebook: Prime Store\nเวลาให้บริการ: ทุกวัน 09:00 - 20:00 น.",
+
+  mapTitle: "ช่องทางติดต่อร้าน",
+  mapText: "ทัก LINE เพื่อสอบถามสินค้า เช็กสต็อก และสั่งซื้อได้ทันที",
+
+  footerText:
+    "PK Premium ร้านสินค้าแฟชั่นมือ 1 และมือ 2 คุณภาพดี คัดสภาพก่อนลงขาย สั่งซื้อง่าย ดูแลจริง",
+  copyrightText:
+    "© 2026 PK Premium. All rights reserved. เงื่อนไขการสั่งซื้อ / การรับประกันสินค้า",
+
   showPromotions: true,
   showWhyUs: true,
   showReviews: true,
-  customCss: "",
+
+  customCss: `
+/* ===== PK Premium Frontend Upgrade ===== */
+
+/* ปุ่มแชท LINE ขวาล่าง */
+header a[href*="line.me"],
+nav a[href*="line.me"],
+header a[href*="lin.ee"],
+nav a[href*="lin.ee"] {
+  display: none !important;
+}
+
+body a[href*="line.me"],
+body a[href*="lin.ee"] {
+  position: fixed !important;
+  right: 22px !important;
+  bottom: 22px !important;
+  z-index: 999999 !important;
+
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 8px !important;
+
+  min-width: 135px !important;
+  height: 52px !important;
+  padding: 0 24px !important;
+
+  background: #06c755 !important;
+  color: #ffffff !important;
+  border-radius: 999px !important;
+  border: 2px solid #ffffff !important;
+
+  font-size: 0 !important;
+  font-weight: 900 !important;
+  text-decoration: none !important;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.28) !important;
+}
+
+body a[href*="line.me"]::before,
+body a[href*="lin.ee"]::before {
+  content: "LINE";
+  background: #ffffff !important;
+  color: #06c755 !important;
+  font-size: 11px !important;
+  font-weight: 900 !important;
+  padding: 5px 7px !important;
+  border-radius: 7px !important;
+}
+
+body a[href*="line.me"]::after,
+body a[href*="lin.ee"]::after {
+  content: "แชททันที";
+  font-size: 16px !important;
+  color: #ffffff !important;
+  white-space: nowrap !important;
+}
+
+@media (max-width: 768px) {
+  body a[href*="line.me"],
+  body a[href*="lin.ee"] {
+    right: 14px !important;
+    bottom: 14px !important;
+    height: 46px !important;
+    min-width: 120px !important;
+    padding: 0 18px !important;
+  }
+
+  body a[href*="line.me"]::after,
+  body a[href*="lin.ee"]::after {
+    font-size: 14px !important;
+  }
+}
+`,
 };
 
-const PRODUCT_KEY = "primeStoreProducts";
-const SETTINGS_KEY = "primeStoreSettings";
+/*
+  เปลี่ยนชื่อ key ใหม่ เพื่อให้คนที่เคยเปิดเว็บแล้วไม่ติดข้อมูลเก่าใน localStorage
+*/
+const PRODUCT_KEY = "pkPremiumProductsV2";
+const SETTINGS_KEY = "pkPremiumSettingsV2";
 
 function readJson(key, fallback) {
   try {
@@ -122,18 +240,23 @@ window.Store = {
   getProducts() {
     return readJson(PRODUCT_KEY, defaultProducts);
   },
+
   saveProducts(products) {
     writeJson(PRODUCT_KEY, products);
   },
+
   getSettings() {
     return { ...defaultSettings, ...readJson(SETTINGS_KEY, {}) };
   },
+
   saveSettings(settings) {
     writeJson(SETTINGS_KEY, { ...defaultSettings, ...settings });
   },
+
   resetProducts() {
     localStorage.removeItem(PRODUCT_KEY);
   },
+
   resetSettings() {
     localStorage.removeItem(SETTINGS_KEY);
   },
