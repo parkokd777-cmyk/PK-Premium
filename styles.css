@@ -839,3 +839,18 @@ h3 {
     width: 100%;
   }
 }
+/* ===== ซ่อนปุ่มแชททันทีขวาบน ===== */
+
+.site-header a[href*="line.me"],
+.site-header a[href*="lin.ee"],
+header a[href*="line.me"],
+header a[href*="lin.ee"],
+.main-nav a[href*="line.me"],
+.main-nav a[href*="lin.ee"],
+nav a[href*="line.me"],
+nav a[href*="lin.ee"] {
+  display: none !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+}
